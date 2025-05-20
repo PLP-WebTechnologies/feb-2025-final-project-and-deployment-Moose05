@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.team-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.tech-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tech-image {
+  height: 180px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+}
+
+.cloud-security {
+  background-image: url('images/cloud-security.jpg'); 
+}
+/* Unique background styles for each tech */
+.cybersecurity {
+  background-image: url('images/cybersecurity.jpg'); 
+}
+
+.fullstack {
+  background-image: url('images/fullstack.jpg');
+}
+
+.cloud-architect {
+  background-image: url('images/cloud-architect.jpg');
+}
+
+.network-engineer {
+  background-image: url('images/network-engineer.jpg');
+}
+
+
+.certs {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.certs li {
+  font-size: 0.9rem;
+  padding: 4px 0;
+  color: #444;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  overflow: hidden;
+}
+
+/* Animated Background Circles */
+.overlay::before,
+.overlay::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  animation: float 10s linear infinite alternate;
+}
+
+.overlay::before {
+  width: 400px;
+  height: 400px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.overlay::after {
+  width: 300px;
+  height: 300px;
+  bottom: 20%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  100% {
+    transform: translateY(-30px) scale(1.1);
+  }
+}
+
+/* Hero Text */
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlay::before, .overlay::after {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+    padding: 0 20px;
+  }
+}

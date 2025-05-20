@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kraft Technologies Group</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header / Title Bar -->
+    <header>
+        <div class="container">
+            <div class="logo">Kraft Technologies Group</div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger">&#9776;</button>
+
+            <nav class="navbar" id="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="techs.html">Meet The Techs</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="home" class="hero">
+        <div class="slideshow-container">
+
+            <div class="slide fade">
+            <img src="images/slide1.jpg" alt="Circuit board" />
+            </div>
+
+            <div class="slide fade">
+            <img src="images/slide2.jpg" alt="Tech computer lab" />
+            </div>
+
+            <div class="slide fade">
+            <img src="images/slide3.jpg" alt="Programming code" />
+            </div>
+
+            <div class="slide fade">
+            <img src="images/slide4.jpg" alt="Cloud technology" />
+            </div>
+
+            <div class="slide fade">
+            <img src="images/slide5.jpg" alt="Server racks" />
+            </div>
+
+            <!-- Navigation arrows -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <p>
+            Kraft Technologies Group is a forward-thinking tech company committed to delivering innovative IT solutions for businesses and individuals. 
+            Our team of expert technicians is passionate about solving problems, building secure systems, and making technology more accessible.
+            </p>
+            <p>
+            Whether it's setting up enterprise networks, designing cloud-based infrastructure, or maintaining secure data environments — 
+            we're here to power your digital future with precision and care.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="info-section">
+    <div class="container">
+        <h2>Our Services</h2>
+        <p>
+        At Kraft Technologies Group, we provide a range of IT services tailored to your needs. Our offerings include network installation, computer maintenance, cybersecurity solutions, cloud services, and tech consultations.
+        </p>
+        <p>
+        Whether you're a small business or a growing enterprise, we ensure your technology works efficiently and securely — so you can focus on what matters most.
+        </p>
+    </div>
+    </section>
+
+    <section id="contact" class="info-section">
+    <div class="container">
+        <h2>How to Find Us</h2>
+        <p>
+        Kraft Technologies Group is located in the heart of the city, easily accessible by public and private transportation. 
+        You can visit us at 123 Tech Avenue, Innovation Park, or reach out via our contact page to schedule an appointment.
+        </p>
+        <p>
+        We’re open Monday to Friday, from 9 AM to 5 PM. Let’s talk tech and explore how we can help you achieve your goals.
+        </p>
+    </div>
+    </section>
+
+    <section id="contact-form" class="form-section">
+        <div class="container">
+            <h2>Schedule an Appointment</h2>
+            <form id="appointmentForm" novalidate>
+            <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required />
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Surname</label>
+                <input type="text" id="lastName" name="lastName" />
+            </div>  
+
+        <div class="form-group">
+            <label for="clientType">I am a:</label>
+            <select id="clientType" name="clientType">
+            <option value="individual">Individual</option>
+            <option value="business">Business</option>
+            </select>
+        </div>  
+
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+            <label for="preferredTime">Preferred Time</label>
+            <input type="time" id="preferredTime" name="preferredTime" />
+        </div>
+
+        <button type="submit">Submit</button>
+
+        </form>
+        <div id="formSuccessMessage" class="success-message" style="display: none;">
+            ✅ Thank you! Your appointment request has been submitted.
+        </div>
+
+    </div>
+    </section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h3>Kraft Technologies Group</h3>
+      <p>We innovate, secure, and support businesses and individuals through reliable technology solutions.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">Who We Are</a></li>
+        <li><a href="#contact-form">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: info@krafttech.com</p>
+      <p>Phone: +27 123 456 7890</p>
+      <p>Address: 123 Tech Ave, Innovation Park</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Kraft Technologies Group. All rights reserved.</p>
+    <p>Developed by Musa Mnanzana</p>
+  </div>
+</footer>
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
